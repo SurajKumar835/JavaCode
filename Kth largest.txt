@@ -1,0 +1,30 @@
+//Java code for Kth largest number form an array
+import java.util.*;
+public class HelloWorld
+{
+    public static void main(String args[])
+    {
+        int i,j,temp;
+        Scanner in=new Scanner(System.in);
+        int N=in.nextInt();
+        in.nextLine();
+        String s=in.nextLine();
+        int K=in.nextInt();
+        String[] inpArray=s.split(" ");
+        int[] inArray=new int[inpArray.length];
+        for(i=0;i<inpArray.length;i++)
+        {
+            inArray[i]=Integer.parseInt(inpArray[i]);
+        }
+        Arrays.sort(inArray);
+        for(i=0;i<inArray.length;i++){
+            System.out.print(inArray[i] +" ");}
+            System.out.print("\n"+"***********"+"\n");
+            if((N-K) < inArray.length && ((N-K)>=0)){
+            System.out.println(inArray[N-K]);
+            }else{
+            System.out.println("Better next time");
+            }
+        
+    }
+}

@@ -1,0 +1,50 @@
+import java.util.*;
+public class Parentesis{
+    public static void main(String [] args)
+    {
+        Scanner in=new Scanner(System.in);
+        int i,j;
+        String s=in.nextLine();
+        String[] bracArray=s.split(" ");
+        for(i=0;i<bracArray.length;i++)
+        {
+            //display contain of a string Array
+            System.out.print(bracArray[i]);
+        }
+        CheckParentesis obj=new CheckParentesis();
+        System.out.print(obj.CheckParentesis(s));
+    }
+}
+    class CheckParentesis{
+    public static boolean CheckParentesis(String str)
+    {
+        if(str.isEmpty())
+        {
+            return true;
+        }
+        Stack<Character> stack=new Stack<Character>();
+        for(int i=0;i<str.length();i++)
+        {
+            char current=str.charAt(i);
+            if(current=='(' || current=='{' || current=='[')
+            {
+                stack.push(current);
+            }
+            if(current==')' || current=='}' || current==']')
+            {
+                if(stack.isEmpty())return false;
+                char last=stack.peek();
+                if((current==')' && last=='(')||(current=='}' && last=='{' )||(current==']' && last=='['))
+                {
+                    stack.pop();
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+        return stack.isEmpty();
+    }
+        
+    }
+    

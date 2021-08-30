@@ -1,0 +1,19 @@
+import java.util.*;
+public class StarDisplay
+{
+    public static void main(String [] args)
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Please enter a number =");
+        int N=in.nextInt();int i,j;
+        for(i=0;i<N;i++)
+        {
+           
+          for(j=0;j<=i;j++)
+          {
+              System.out.print(" "+'*');
+          }
+          System.out.print("\n");
+        }
+    }
+}
