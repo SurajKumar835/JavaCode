@@ -1,0 +1,27 @@
+import java.util.*;
+public class A{
+    public static void main(String[] args)
+    {
+        Scanner in =new Scanner(System.in);
+        String s=in.nextLine();
+        int num=Integer.parseInt(s);
+        int sod=0;
+        while(num > 0)
+        {
+            sod+=num%10;
+            num /=10;
+            
+        }
+        int tod=0;
+        while(sod>0)
+        {
+            tod+=sod%10;
+            sod /=10;
+        }
+        if(tod==1)
+            System.out.print("it's a Magic Number");
+        else
+            System.out.print("Wait for it next man");
+        
+    }
+}
