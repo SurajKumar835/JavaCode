@@ -1,0 +1,6 @@
+"import java.util.Scanner;
+  Scanner console = new Scanner(System.in);
+  int num = console.nextInt();
+  console.nextLine() // to take in the enter after the nextInt() 
+  
+  String str = console.nextLine();"
