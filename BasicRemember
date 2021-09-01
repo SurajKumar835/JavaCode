@@ -4,3 +4,12 @@
   console.nextLine() // to take in the enter after the nextInt() 
   
   String str = console.nextLine();"
+////take character as input
+
+Scanner sc = new Scanner(System.in);   
+System.out.print(""Input a character: "");  
+// reading a character   
+char c = sc.next().charAt(0);   
+//prints the character   
+
+/////
