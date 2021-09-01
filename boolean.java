@@ -14,3 +14,14 @@ public class Hello
             System.out.print(b3==b4);
     }
 }
+////other code
+public class MyClass {
+    public static void main(String args[]) {
+       int i=10;
+       method(i);
+    }
+     static void method(long l)
+    {
+        System.out.print(l);
+    }
+}
