@@ -12,4 +12,9 @@ System.out.print(""Input a character: "");
 char c = sc.next().charAt(0);   
 //prints the character   
 
+/////date in java
+"DateFormat df = new SimpleDateFormat(""dd/MM/yy HH:mm:ss"");
+Date dateobj = new Date();
+System.out.println(df.format(dateobj));"
+
 /////
