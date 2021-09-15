@@ -28,3 +28,24 @@ public class StaticMethod
     }
 }
 /////////////////////////////////
+public class StaticBlock
+{
+    static int a;
+    static int b;
+    static int c;
+    static {//static block to intialize data member
+            a=12;
+            b=19;
+            c=a+b;
+        System.out.println("iam Coming ! Suraj");
+    }
+    StaticBlock(){
+         System.out.println("hello"+ c);
+    }
+    public static void main(String [] args)
+    {
+        StaticBlock at=new StaticBlock();
+        System.out.println(c);
+       
+    }
+}
