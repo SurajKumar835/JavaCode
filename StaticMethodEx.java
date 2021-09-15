@@ -16,3 +16,15 @@ public class Hello
         System.out.println(hello+"-"+count);
     }
 }
+////////////////////////////////
+public class StaticMethod
+{
+    static void myself(){
+        System.out.print("iam Coming ! Suraj");
+    }
+    public static void main(String [] args)
+    {
+        myself();
+    }
+}
+/////////////////////////////////
