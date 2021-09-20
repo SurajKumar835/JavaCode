@@ -40,3 +40,24 @@ class IterationDemo
     } 
 } 
 //////
+public class MyClass {
+    public static void main(String args[]) {
+     String s="abc";
+     int len=s.length();
+     gP(s,0);
+    }
+    static void gP(String s,int start)
+    {
+        if(s.length()==start){System.out.println(s);}
+        char[] c=s.toCharArray();
+        for(int i=start;i<c.length;i++)
+        {
+            char temp;
+            temp=c[i];
+            c[i]=c[start];
+            c[start]=temp;
+            
+            gP(new String(c),start+1);
+        }
+    }
+}
